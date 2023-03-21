@@ -36,6 +36,33 @@ We developed a channel to transfer files securely, using key based encryption me
 > 5. Software implementable in C and Java
 
 ### IMPLIMENTATION
+ 
+ ####FOR RSA----
+ - cd /home/kali/RSA1/Secure-File-Transfer/
+ - gcc client.c -o client
+ - gcc client.c
+ - gcc rsa-encryption.c -lm
+ - ./a.out
+ - ./client
+ - ./client
+ - gcc server.c -o server
+ - ./server
+ - gcc rsa-decryption.c -lm
+ - ./decrypt
+
+####FOR AES----
+ - cd /home/kali/RSA1/Secure-File-Transfer/
+ - cd AES
+ - gcc client.c
+ - gcc encrypt_decrypt_file.c -lcrypto
+ - ./a.out encrypt abc.txt
+ - ./client 
+ - vi abc.txt
+ - gcc encrypt_decrypt_file.c -lcrypto
+ - gcc decrypt abc.txt 
+ - vi abc.txt
+ 
+
 
 ## Technology Used
 
