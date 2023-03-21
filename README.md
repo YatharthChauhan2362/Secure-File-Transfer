@@ -2,10 +2,10 @@
 
 We developed a channel to transfer files securely, using key based encryption methods and comparing the different methods on Linux based OS. The sub-objectives incidental to the main objective are:
 
->     - Use of Asymmetric and Symmetric encryption methods to secure both ends of the communication channel
->     - To provide a secure channel for faster transmission of data
->     - To build a dependable and encrypted file transfer system between client and server
->     - To compare the asymmetric and symmetric encryption algorithms.
+>     Use of Asymmetric and Symmetric encryption methods to secure both ends of the communication channel
+>     To provide a secure channel for faster transmission of data
+>     To build a dependable and encrypted file transfer system between client and server
+>     To compare the asymmetric and symmetric encryption algorithms.
 
 ---
 
@@ -15,7 +15,7 @@ We developed a channel to transfer files securely, using key based encryption me
 
 > RSA algorithm is a public key encryption technique and is considered as the most secure way of encryption. It was invented by Rivest, Shamir and Adleman in year 1978 and hence name RSA algorithm.
 >
-> - The RSA algorithm holds the following features −
+> The RSA algorithm holds the following features −
 >
 > 1. RSA algorithm is a popular exponentiation in a finite field over integers including prime numbers.
 > 2. The integers used by this method are sufficiently large making it difficult to solve.
@@ -27,7 +27,7 @@ We developed a channel to transfer files securely, using key based encryption me
 
 > The more popular and widely adopted symmetric encryption algorithm likely to be encountered nowadays is the Advanced Encryption Standard (AES). It is found at least six time faster than triple DES. A replacement for DES was needed as its key size was too small. With increasing computing power, it was considered vulnerable against exhaustive key search attack. Triple DES was designed to overcome this drawback but it was found slow.
 >
-> - The features of AES are as follows −
+> The features of AES are as follows −
 >
 > 1. Symmetric key symmetric block cipher
 > 2. 128-bit data, 128/192/256-bit keys
@@ -36,46 +36,65 @@ We developed a channel to transfer files securely, using key based encryption me
 > 5. Software implementable in C and Java
 
 ### IMPLIMENTATION
- 
- ####FOR RSA----
- - cd /home/kali/RSA1/Secure-File-Transfer/
- - gcc client.c -o client
- - gcc client.c
- - gcc rsa-encryption.c -lm
- - ./a.out
- - ./client
- - ./client
- - gcc server.c -o server
- - ./server
- - gcc rsa-decryption.c -lm
- - ./decrypt
 
-####FOR AES----
- - cd /home/kali/RSA1/Secure-File-Transfer/
- - cd AES
- - gcc client.c
- - gcc encrypt_decrypt_file.c -lcrypto
- - ./a.out encrypt abc.txt
- - ./client 
- - vi abc.txt
- - gcc encrypt_decrypt_file.c -lcrypto
- - gcc decrypt abc.txt 
- - vi abc.txt
- 
+#### RSA ENCYPTION
 
+    gcc client.c -o client
+
+    gcc client.c
+
+    gcc rsa-encryption.c -lm
+
+    ./a.out
+
+    ./client
+
+    ./client
+
+#### RSA DECRYPTION
+
+    gcc server.c -o
+
+    ./server
+
+    gcc rsa-decryption.c -lm
+
+    ./decrypt
+
+#### FOR AES ENCYPTION
+
+    cd AES
+
+    gcc client.c
+
+    gcc encrypt_decrypt_file.c -lcrypto
+
+    ./a.out encrypt abc.txt
+
+    ./client
+
+    vi abc.txt
+
+#### FOR AES DECRYPTION
+
+    gcc encrypt_decrypt_file.c -lcrypto
+
+    gcc decrypt abc.txt
+
+    vi abc.txt
 
 ## Technology Used
 
-> - C
-> - Socket Programming
+> C
+> Socket Programming
 
 ---
 
 ## Limitations
 
-- It can only encrypt text files.
+It can only encrypt text files.
 
-  ***
+---
 
 ## Developers:
 
